@@ -86,7 +86,7 @@
 
 ![7.1](https://raw.githubusercontent.com/zhangkaitui/student_elective_sys/master/img/7.1.bmp)
 
-上述流程图，晰的展示了程序的执行流程及具体的功能。所以，为了更方便系统的实现，请画出你的流程图。
+上述流程图，详细的展示了程序的执行流程及具体的功能。所以，为了更方便系统的实现，请画出你的流程图。
 
 ### 7.2.6 数据库设计
 
