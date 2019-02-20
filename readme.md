@@ -1117,7 +1117,7 @@ password:666
 ```python
 # Student类中的show_courses方法
 class Student:
-	def show_courses(self):
+    def show_courses(self):
         '''查看可选课程'''
         print('课程信息如下 ： ')
         course_obj_lst = []
@@ -1201,7 +1201,7 @@ python 课程选择成功
 ```python
 # Student类中show_selected_course方法
 class Student:
-        def show_selected_course(self):
+    def show_selected_course(self):
         '''查看选择的课程'''
         with open(os.path.join(BASE_DIR, 'db', 'student_info'), 'rb') as f:
             while True:
@@ -1222,7 +1222,7 @@ class Student:
 ```python
 # Student类中show_selected_course方法
 class Student:
-            def show_selected_course(self):
+    def show_selected_course(self):
         '''查看选择的课程'''
         print('选课情况如下 ： ')
         for num, course_obj in enumerate(self.courses, 1):
@@ -1260,7 +1260,7 @@ password:666
 ```python
 # Manager类中show_students_courses方法  
 class Manager:
-        def show_students_courses(self):
+     def show_students_courses(self):
         '''查看所有学生选课情况'''
         with open(os.path.join(BASE_DIR, 'db', 'student_info'), 'rb') as f:
             num = 0
@@ -1301,7 +1301,7 @@ password:3714
 ```python
 # Course类，添加__repr__方法
 class Course：
-	def __repr__(self):
+    def __repr__(self):
         return self.name
 ```
 
@@ -1336,7 +1336,7 @@ OK，管理员查看学生的选课信息的功能完成，让我们继续开发
 ```python
 # Student类中exit方法
 class Student:
-	def exit(self):
+    def exit(self):
         '''退出''' 
         sys.exit('拜拜了您嘞！')  
 ```
@@ -1581,7 +1581,7 @@ if __name__ == '__main__':
 ```python
 # Manager类中的show_courses方法
 class Manager:
-        def show_courses(self):
+    def show_courses(self):
         '''查看可选课程'''
         print('可选课程如下:')
         with open(os.path.join(BASE_DIR, 'db', 'course_info'), 'rb') as f:
@@ -1596,7 +1596,7 @@ class Manager:
         print('')
 # Student类中的show_courses方法
 class Student:
-        def show_courses(self):
+    def show_courses(self):
         '''查看可选课程'''
         print('课程信息如下 ： ')
         course_obj_lst = []
@@ -1620,7 +1620,7 @@ class Student:
 
 ```python
 class Person:
-        def show_courses(self):
+    def show_courses(self):
         '''查看可选课程'''
         print('课程信息如下 ： ')
         course_obj_lst = []
@@ -1649,7 +1649,7 @@ class Manager(Person): pass
 
 ```python
 class Person:
-        def exit(self):
+    def exit(self):
         '''退出'''
         sys.exit('拜拜了您嘞！')   
 class Student(Person): pass
@@ -1737,7 +1737,7 @@ class Person:
 ```python
 # Manager类中的create_student方法
 class Manager(Person):
-        def create_student(self):
+    def create_student(self):
         '''创建学生'''
         stu_name = input('学生姓名 ： ')
         stu_pwd = input('学生密码 ： ')
@@ -1785,7 +1785,7 @@ password : 3714
 ```python
 # # Manager中的show_students方法
 class Manager(Person):
-        def show_students(self):
+    def show_students(self):
         '''查看所有学生'''
         print('学生如下 ： ')
         for index, item in enumerate(self.load_obj(file_path=settings.STUDENT_INFO, mode='rb'), 1):
