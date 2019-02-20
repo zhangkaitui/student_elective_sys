@@ -102,7 +102,7 @@ student_electiive_sys/
 	│	├─ course_info		# 存放课程信息
 	│	├─ student_info		# 存放学生信息
 	│	└─ user_info		# 存放用户信息
-	└─ main.py				# 主逻辑文件
+	└─ main.py			# 主逻辑文件
 ```
 
 在`student_elective_sys`目录下有db目录，该目录内存放着所有的数据文件。我们只需要把db目录创建出来。然后再把`userinfo`文件创建出来即可，内容稍后填充。其他的数据文件我们无需手动创建，程序在运行中自动创建。而与db目录同级有一个main文件。该`main.py`文件为我们的主逻辑文件。
@@ -118,6 +118,7 @@ class Student:
 class Manager:
     def __init__(self, name):
         self.name = name
+	self.courses = []
 class Course:
     def __init__(self, name, price, period):
         self.name = name
