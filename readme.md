@@ -115,10 +115,10 @@ student_electiive_sys/
 class Student:
     def __init__(self, name):
         self.name = name
+	self.courses = []
 class Manager:
     def __init__(self, name):
         self.name = name
-	self.courses = []
 class Course:
     def __init__(self, name, price, period):
         self.name = name
